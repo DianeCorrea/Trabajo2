@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="envio.php" method="post" target="_blank">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" size="tamaño"
+        name="nombre" placeholder="escribe aquí tu usuario" required>
+        <small>*</small>
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="password" size="tamaño"
+        name="password" placeholder="escribe aquí tu contraseña" maxlength="10" minlength="4" required>
+        <small>*</small>
+        <br>
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones"> Estoy de acuerdo con las coniciones del contrato
+        <br>
+        <br>
+        <input type="radio" name="lenguajes" value="html"> HTML
+        <input type="radio" name="lenguajes" value="css"> CSS
+        <input type="radio" name="lenguajes" value="javascript"> Javascript
+        <input type="radio" name="lenguajes" value="python"> Python
+        <br>
+        <br>
+        <label for="programando">Años programando:</label>
+        <input type="number" id="usuario" size="tamaño"
+        name="nombre" placeholder="Indique la cantidad de años">
+        <br>
+        <br>
+        <label for="archivo">Sube aquí tu CV:</label>
+        <input type="file" id="archivo" size="tamaño"
+        name="archivo" value="file">
+        <br>
+        <br>
+        <label for="opinion">Agregue su opinión:</label>
+        <textarea type="file" id="opinion" size="tamaño"
+        name="opinion" placeholder="Escribe tu opinión" rows="10" cols="50"></textarea>
+        <br>
+        <br>
+        <label for="País">Seleccione su país de origen:</label>
+        <select name="País" id="País">
+            <optgroup label="Todos">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Uruguay" selected="selected">Uruguay</option>
+                <option value="Perú">Perú</option>
+            </optgroup>
+            <optgroup label="Grupo 1">
+                <option value="Argentina">Argentina</option>
+                <option value="Perú">Perú</option>
+            </optgroup>
+            <optgroup label="Grupo 2"> 
+                <option value="Brasil">Brasil</option>
+            <option value="Uruguay">Uruguay</option>
+            </optgroup>
+        </select>
+
+            <br>
+            <br>
+
+            <label for="Fecha">Fecha de nacimiento</label>
+        <input type="date" id="Fecha" name="Fecha" max="2002-04-30" required>
+        <small>*</small> 
+            <br>
+            <br>
+            <input type="submit" value="Confirme sus datos">
+         <input type="reset" value="Resetear sus datos">
+
+        <br>
+        <br>
+        <input type="button" onclick="alert(anotate en mis clases)" value="Saludando">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="Aviso">Los campos con * son obligatorios:</label>
+
+
+
+    </form>
+    </body>
+    
